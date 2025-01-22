@@ -79,7 +79,8 @@ function App() {
     mouthStyle: 'subtle',
     mouthColor: '#8d5524',
     hairStyle: 'medium',
-    hairColor: '#2c222b'
+    hairColor: '#2c222b',
+    faceshape: 'long'
   });
 
   useEffect(() => {

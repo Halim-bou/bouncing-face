@@ -3,7 +3,7 @@
  export type EyeSize = 'small' | 'medium' | 'large';
  export type MouthStyle = 'smile' | 'neutral' | 'grin' | 'subtle' | 'surprised' | 'frown';
  export type HairStyle = 'none' | 'short' | 'medium' | 'long' | 'spiky';
- export type Faceshape = 'oval' |'round' | 'long' | 'square' | 'heart' | 'diamond'
+ export type Faceshape = 'oval' |'round' | 'long' | 'square' | 'heart'
 
  export interface FaceCustomization {
 	faceColor: string;
@@ -32,7 +32,11 @@
 	};
 
 	const faceshape = {
-
+		oval: 'w-32 h-16 rounded-full',
+		round: 'rounded-full',
+		long: 'w-20 h-26 rounded-full',
+		square: 'w-50 h-50',
+		heart: 'relative w-16 h-16 bg-red-500 rounded-full before:content-[\'\'] before:absolute before:w-16 before:h-16 before:bg-red-500 before:rounded-full before:top-[-8px] before:left-[-8px] after:content-[\'\'] after:absolute after:w-16 after:h-16 after:bg-red-500 after:rounded-full after:top-[-8px] after:right-[-8px] clip-heart'
 	};
 
 	const hairStyles = {
@@ -131,7 +135,7 @@
 		{hairStyles[customization.hairStyle]}
 
 		<div
-		  className="absolute inset-0 rounded-full shadow-lg"
+		  className={`absolute ${faceshape[customization.faceshape]}`}
 		  style={{ backgroundColor: customization.faceColor }}
 		></div>
 
