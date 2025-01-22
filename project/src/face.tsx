@@ -34,7 +34,7 @@
 	const faceshape = {
 		oval: 'w-32 h-16 rounded-full',
 		round: 'rounded-full',
-		long: 'w-20 h-26 rounded-full',
+		long: 'w-50 h-50 rounded-full',
 		square: 'w-50 h-50',
 		heart: 'relative w-16 h-16 bg-red-500 rounded-full before:content-[\'\'] before:absolute before:w-16 before:h-16 before:bg-red-500 before:rounded-full before:top-[-8px] before:left-[-8px] after:content-[\'\'] after:absolute after:w-16 after:h-16 after:bg-red-500 after:rounded-full after:top-[-8px] after:right-[-8px] clip-heart'
 	};
